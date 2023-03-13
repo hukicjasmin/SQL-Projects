@@ -20,7 +20,7 @@ MODIFY COLUMN budget DECIMAL(15,2);
 ALTER TABLE movies 
 MODIFY COLUMN gross DECIMAL(15,2);
 
-/* Create a new column - month, and populate is with the data from the column released */
+/* Create a new column "month" and populate is with the data from the column released */
 
 ALTER TABLE movies 
 ADD month VARCHAR(20);
@@ -78,7 +78,7 @@ WHERE name IN (
  HAVING COUNT(*) > 1
 )
 
-/* Finding duplicates with WHERE comand was to slow, so I used the approach with JOIN  */
+/* Finding duplicates with WHERE comand was too slow, so I used the approach with JOIN  */
 
 SELECT m1.* FROM movies m1
 JOIN (
