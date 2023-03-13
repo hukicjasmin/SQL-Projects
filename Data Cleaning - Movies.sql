@@ -65,7 +65,7 @@ ORDER BY number_of_movies DESC;
 UPDATE movies
 SET country = 
 CASE WHEN country = 'United States'
-	 THEN 'US'
+     THEN 'US'
      ELSE 'non-US'
 END;
 
