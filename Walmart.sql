@@ -1,3 +1,7 @@
+/* This is data analasys project in SQL (MySQL Workbench). 
+I used dataset "walmart.csv" that is publicly available on Kaggle: 
+https://www.kaggle.com/code/squidbob/walmart-analysis-eda */
+
 /* Inspect data */
 SELECT * FROM walmart;
 
